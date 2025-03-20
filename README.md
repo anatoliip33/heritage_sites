@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/anatoliip33/heritage_sites
+git clone `https://github.com/anatoliip33/heritage_sites`
 cd heritage_sites
 mix deps.get
 mix run --no-halt
