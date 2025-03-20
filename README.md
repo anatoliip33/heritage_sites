@@ -5,10 +5,10 @@
 ## Installation
 
 ```bash
-  git clone https://github.com/anatoliip33/heritage_sites
-  cd heritage_sites
-  mix deps.get
-  mix run --no-halt
+git clone https://github.com/anatoliip33/heritage_sites
+cd heritage_sites
+mix deps.get
+mix run --no-halt
 ```
 
 ## API Endpoints  
@@ -20,7 +20,7 @@
 - **Method:** `GET`  
 - **URL:** `http://localhost:4000/api/locations`  
 ```bash
-  curl -X GET "http://localhost:4000/api/locations" -H "Content-Type: application/json"
+curl -X GET "http://localhost:4000/api/locations" -H "Content-Type: application/json"
 ```
 
 #### Response:  
@@ -55,7 +55,7 @@
   from - Starting record number.
   size - Number of records to return.  
 ```bash
-  curl -X GET "http://localhost:4000/api/locations?lang=fr&from=10&size=5" -H "Content-Type: application/json"
+curl -X GET "http://localhost:4000/api/locations?lang=fr&from=10&size=5" -H "Content-Type: application/json"
 ```
 
 #### Response:  
@@ -90,7 +90,7 @@
   from - Starting record number.
   size - Number of records to return.  
 ```bash
-  curl -X GET "http://localhost:4000/api/locations?query_params=name_en,category,date_inscribed&from=5&size=10" -H "Content-Type: application/json"
+curl -X GET "http://localhost:4000/api/locations?query_params=name_en,category,date_inscribed&from=5&size=10" -H "Content-Type: application/json"
 ```
 
 #### Response:  
@@ -121,7 +121,7 @@
   from - Starting record number.
   size - Number of records to return.  
 ```bash
-  curl -X GET "http://localhost:4000/api/locations?lang=es&query_params=name_es,category,date_inscribed&from=2&size=3" -H "Content-Type: application/json"
+curl -X GET "http://localhost:4000/api/locations?lang=es&query_params=name_es,category,date_inscribed&from=2&size=3" -H "Content-Type: application/json"
 ```
 
 #### Response:  
