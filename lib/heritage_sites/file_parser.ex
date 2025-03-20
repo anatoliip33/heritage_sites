@@ -39,13 +39,6 @@ defmodule HeritageSites.FileParser do
     |> Enum.to_list()
   end
 
-  defp add_size(streams, size) when is_integer(size) and size > 0 do
-    streams
-    |> Stream.take(size)
-  end
-
-  defp add_size(streams, _), do: streams
-
   defp filter_by_params(params, site) when params == %{}, do: site
 
   defp filter_by_params(%{"lang" => lang, "query_params" => query_params}, site) do
@@ -84,4 +77,11 @@ defmodule HeritageSites.FileParser do
     @lang_fields
     |> Enum.map(&"#{&1}_#{lang}")
   end
+
+  defp add_size(streams, size) when is_integer(size) and size > 0 do
+    streams
+    |> Stream.take(size)
+  end
+
+  defp add_size(streams, _), do: streams
 end
