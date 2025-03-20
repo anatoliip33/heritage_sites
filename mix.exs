@@ -14,6 +14,7 @@ defmodule HeritageSites.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      mod: {HeritageSites.Application, []},
       extra_applications: [:logger]
     ]
   end
@@ -22,7 +23,8 @@ defmodule HeritageSites.MixProject do
   defp deps do
     [
       {:plug_cowboy, "~> 2.7"},
-      {:jason, "~> 1.4"}
+      {:jason, "~> 1.4"},
+      {:csv, "~> 3.2"}
     ]
   end
 end
